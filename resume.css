@@ -123,10 +123,12 @@ body{
 }
 #skills h4{
         font-size: 25px;
-        margin-top: -0.%;
 }
 #trainings{
         margin-top: 5%;
+}
+#arrow-left,#arrow-right{
+        cursor: pointer;
 }
 #resume-download{
         color: black;
@@ -139,7 +141,7 @@ body{
         border: 0;
         transition: 1s;
         cursor:pointer;
-        margin-top: 50%;
+        margin-top: 7%;
         align-items: center;
 }
 #resume-download:hover{
@@ -253,7 +255,7 @@ footer{
     .slides p{
         opacity: 0.7;
     }
-    .readMore{
+    .experience{
         color: #FF4500;
         font-weight: bold;
         font-size:medium;
@@ -266,4 +268,4 @@ footer{
         cursor:pointer;
         
     }
-    
+   
