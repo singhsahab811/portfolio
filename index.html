@@ -7,6 +7,7 @@
     <title>Portfolio-Tushar</title>
     <link rel = "icon" href ="images/logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="resume.css">
+    <script src="resume.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
             <a href="#trainings">Trainings</a>
             <a href="https://blogs-tushar.netlify.app/">Blogs</a>
         </section>
-        <input type="button" value="HIRE ME" id="hireme">
+        <input type="button" value="HIRE ME" onclick="hireMe()" id="hireme">
     </header>
 
     <!-- Landing Area -->
@@ -29,7 +30,7 @@
             <h3 id="greet"><b><span>नमस्ते</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: whitesmoke;">|</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span >HELLO</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: whitesmoke;">|</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span >BONJOUR</span></b></h3>
             <h3>I&nbsp;&nbsp;am&nbsp;&nbsp;<span style="font-size:35px;">TUSHAR KUMAR RAJPUT</span></h3>
             <h3>UI/UX Designer and Developer</h3>
-            <a href="pdfs/resume_tushar.pdf"><input type="button" value="Download CV"></a>
+            <input type="button" onclick="resumeDownload()" value="Download CV">
         </section>
     </div>
 
@@ -52,7 +53,7 @@
                             functions. It had been implemented in
                             pure HTML, CSS and JS.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" id="traditional"onclick="newPage()" value="View Live">
                     </section>
                     <section class="slides" id="project1">
                         <h4>Penetration testing <span id="date">&nbsp;August 08, 2020</span></h4>
@@ -63,7 +64,7 @@
                             Networking. It was a part of IIT, Kanpur
                             training and internships program.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Report">
+                        <input type="button" class="experience" id="cyberkanpur" onclick="newPage()" value="View Report">
                     </section> 
                     
                     <section class="slides" id="project2">
@@ -75,7 +76,7 @@
                             programme. It was designed on Adobe Xd. 
                             This webpage is its frontend sample. 
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="Prototype">
+                        <input type="button" class="experience" id="portfolioDesign" onclick="newPage()" value="Prototype">
                     </section> 
                     <section class="slides" id="project3">
                         <h4>FoodRunner<span id="date">&nbsp;August 17, 2020</span></h4>
@@ -86,7 +87,7 @@
                             part of training program by Internshala. It 
                             had been implemented in Kotlin and XML.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="Download">
+                        <input type="button" class="experience" id="foodRunner" onclick="newPage()" value="Download">
                     </section>
                     <section class="slides" id="project4">
                         <h4>E-Paathshaala <span id="date">&nbsp;June 27, 2021</span></h4>
@@ -97,7 +98,7 @@
                             drive of Navigus. I had implemented these
                             webpages in pure HTML, CSS and JS.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" onclick="newPage()" value="View Live">
                     </section>
                     <section class="slides" id="project5">
                         <h4>CYBCRYPT <span id="date">&nbsp;Ongoing</span></h4>
@@ -108,7 +109,7 @@
                             in team of four. We are using HTML, CSS, JS,
                             Bootstrap, PHP and MYSQL for this project.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" id="collegeProject" onclick="newPage()" value="View Live">
                     </section>
                     <section class="slides" id="project6">
                         <h4>Guess a number <span id="date">&nbsp;August 14, 2021</span></h4>
@@ -119,7 +120,7 @@
                             a bootcamp on Udemy. It had been implemented
                             in pure HTML, CSS and JS.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" id="guessGame" onclick="newPage()" value="View Live">
                     </section>
                     <section class="slides" id="project7">
                         <h4>JTGPOD <span id="date">&nbsp;July 25, 2021</span></h4>
@@ -130,18 +131,16 @@
                             drive ofr Josh Technology. I had implemented
                             this webpage in pure HTML, CSS and JS.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" id="blogs" onclick="newPage()" value="View Live">
                     </section>
                     <section class="slides" id="project8">
-                        <h4>CYBCRYPT <span id="date">&nbsp;Ongoing</span></h4>
+                        <h4>DaanDaata <span id="date">&nbsp;Ongoing</span></h4>
                         <h5 class="domain">Full Stack Developement</h5>
                         <img class="project-image" src="images/cybcrypt.PNG" alt="College Project">
                         <p class="project-details">
-                            This is our college project. We are grouped
-                            in team of four. We are using HTML, CSS, JS,
-                            Bootstrap, PHP and MYSQL for this project.
+                            Ongoing
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" id="daanDaata" onclick="newPage()" value="View Live">
                     </section>
                     <section class="slides" id="project9">
                         <h4>SI Calculator <span id="date">&nbsp;June 24, 2021</span></h4>
@@ -152,12 +151,12 @@
                             functions. It had been implemented in
                             pure HTML, CSS and JS.
                         </p>
-                        <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                        <input type="button" class="experience" id="interestCalculater" onclick="newPage()" value="View Live">
                     </section>
                 </div>
             <section class="row" id="bt-navigations">
-                <a href=""><img src="images/arrow-left.png" width="20" height="32" alt="Leftmove"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href=""><img src="images/arrow-right.png" width="20" height="32" alt="Leftmove"></a>
+                <img onclick="plusSlides(-1)"  id="arrow-left" src="images/arrow-left.png" width="20" height="32" alt="Leftmove"></a>&emsp;
+                <img src="images/arrow-right.png" onclick="minusSlides(1)" id="arrow-right" width="20" height="32" alt="Leftmove"></a>
             </section>
         </div>
     </div>
@@ -169,65 +168,65 @@
                 <section class="slides" id="training1">
                     <h4>Dignique Techlabs <span id="date">&nbsp;May 2020 - June 2020</span></h4>
                     <h5 class="domain">Campus Ambassador</h5>
-                    <img class="project-image" src="images/techlabs.PNG" alt="Company Logo" width="180" height="150">
+                    <img class="project-image" src="images/techlabs.PNG" alt="Traditional Calculator" width="180" height="150">
                     <p class="project-details">
                         
                         <a href="#">Portfolio</a>
                         MS Excel and Communication Skills
                     </p>
-                    <input type="button" class="readMore" onclick="newPage()" value="Certificate">
+                    <input type="button" class="experience" id="dtLabs" onclick="newPage()" value="Certificate">
                 </section>
                 <section class="slides" id="training2">
                     <h4>DEAL, DRDO <span id="date">&nbsp;June 2021 - August 2021</span></h4>
                     <h5 class="domain">Summer Trainee</h5>
-                    <img class="project-image" src="https://bit.ly/3kutsgK" alt="Company Logo" width="180" height="150">
+                    <img class="project-image" src="https://bit.ly/3kutsgK" alt="Traditional Calculator" width="180" height="150">
                     <p class="project-details">
 
-                        <a href="https://github.com/singhsahab811/Histogram-Equlization-and-Matching">Histogram Equilization and Matching</a>
+                        <a href="#">Histogram Equilization and Matching</a>
                         C Programming & Visual Studio IDE
                     </p>
-                    <input type="button" class="readMore" onclick="newPage()" value="Certificate">
+                    <input type="button" class="experience" id="drdo" onclick="newPage()" value="Certificate">
                 </section> 
                 <section class="slides" id="training3">
                     <h4>I Learning Solutions <span id="date">&nbsp;June 2021 - Present</span></h4>
                     <h5 class="domain">UI/UX Designer</h5>
-                    <img class="project-image" src="images/innvocon.png" alt="Company Logo" width="180" height="150">
+                    <img class="project-image" src="images/innvocon.png" alt="Traditional Calculator" width="180" height="150">
                     <p class="project-details">
 
                         <a href="#">Portfolio</a>
                         Adobe Xd
                     </p>
-                    <input type="button" class="readMore" onclick="newPage()" value="Certificate">
+                    <input type="button" class="experience" id="innvocon" onclick="newPage()" value="Certificate">
                 </section>
                 <section class="slides" id="training4">
                     <h4>EICT, IIT Kanpur <span id="date">&nbsp;June 2020 - August 2020</span></h4>
                     <h5 class="domain">Cyber Security with Linux</h5>
-                    <img class="project-image" src="images/eict.PNG" alt="Company Logo" width="180" height="150">
+                    <img class="project-image" src="images/eict.PNG" alt="Traditional Calculator" width="180" height="150">
                     <p class="project-details">
                         
                         <a href="pdfs/report_pentest.pdf">Penetration Testing on Web Server</a>
                         Linux, Metasploit, Whoami and Networking
                     </p>
-                    <input type="button" class="readMore" onclick="newPage()" value="Certificate">
+                    <input type="button" class="experience" id="eict" onclick="newPage()" value="Certificate">
                 </section>
                 <section class="slides" id="training5">
                     <h4>Internshala <span id="date">&nbsp;June 2020 - August 2020</span></h4>
                     <h5 class="domain">Android App Developement</h5>
-                    <img class="project-image" src="images/internshaala.PNG" alt="Company Logo" width="180" height="150">
+                    <img class="project-image" src="images/internshaala.PNG" alt="Traditional Calculator" width="180" height="150">
                     <p class="project-details">
                         
                         <a href="food_runner.apk">Food ordering App</a>
                         Kotlin, XML and Android Studio
                     </p>
-                    <input type="button" class="readMore" onclick="newPage()" value="View Live">
+                    <input type="button" class="experience" id="internshaala" onclick="newPage()" value="View Live">
                 </section>
             </div>
         </div>
         <section class="row" id="bt-navigations">
-            <a href=""><img src="images/arrow-left.png" width="20" height="32" alt="Leftmove"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=""><img src="images/arrow-right.png" width="20" height="32" alt="Leftmove"></a>
+            <img onclick="plusSlides(-1)"  id="arrow-left" src="images/arrow-left.png" width="20" height="32" alt="Leftmove"></a>&emsp;
+                <img src="images/arrow-right.png" onclick="minusSlides(1)" id="arrow-right" width="20" height="32" alt="Leftmove"></a>
         </section>
-        <a href="pdfs/resume_tushar.pdf"><input id="resume-download" type="button" value="Download CV"></a>
+        <input id="resume-download" type="button" onclick="resumeDownload()" value="Download CV">
     
     </div>
 
