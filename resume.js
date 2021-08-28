@@ -1,3 +1,4 @@
+alert("Still Working on it.\n Some of the functions may not work propely");
 var slideIndex=1;
 function plusSlides(n) {
     showSlides();
