@@ -33,7 +33,7 @@ container.replaceChildren(...newSlides);
 }
 
  function hireMe(){
-    location.href="mailto:tkrajput312@gmail.com";
+    location.href="href=mailto:tkrajput312@gmail.com?subject= We are interested to hire you mailto!&body=Hey Tushar, We want to hire you. Here are the next step of hiring process";
  }
 function resumeDownload(){
   
